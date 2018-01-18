@@ -14,7 +14,8 @@ int main() {
     string line;
     // create an output stream to write to the file
     // append the new lines to the end of the file
-    ofstream myfileI("input.txt", ios::app);
+    //ofstream myfileI("input.txt", ios::app);
+    fstream myfileI("input.txt", ios::app);
     if(myfileI.is_open())
     {
         myfileI << "\nI am adding a line.\n";
@@ -24,7 +25,8 @@ int main() {
     else cout << "Unable to open file for reading";
 
     //create an input stream to write to the file
-    ifstream myfileO("input.txt");
+    //ifstream myfileO("input.txt");
+    fstream myfileO("input.txt");
     if(myfileO.is_open())
     {
         while(getline(myfileO,line))
