@@ -34,6 +34,7 @@ int main()
     //std::cout << exp2 << "n";
     std::cout << exp2 << "\n";
     std::cout << "What is the constant?";
+    //std::cin>>>constant;
     std::cin >> constant;
     std::cout << constant << "\n";
     // Print the complete equation
